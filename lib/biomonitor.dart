@@ -9,7 +9,8 @@ import 'shop.dart';
 import 'subsidies.dart';
 import 'dashboard.dart';
 import 'solarservices.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:Renewify/gen_l10n/app_localizations.dart';
+
 class MonitorBiogasPage extends StatefulWidget {
   @override
   _MonitorBiogasPageState createState() => _MonitorBiogasPageState();
