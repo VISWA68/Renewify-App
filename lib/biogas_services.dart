@@ -15,7 +15,7 @@ import 'settings.dart';
 import 'shop.dart';
 import 'solarservices.dart';
 import 'subsidies.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:Renewify/gen_l10n/app_localizations.dart';
 
 class BiogasServices extends StatefulWidget {
   const BiogasServices({Key? key}) : super(key: key);

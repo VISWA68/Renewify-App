@@ -8,8 +8,7 @@ import 'settings.dart';
 import 'shop.dart';
 import 'solarservices.dart';
 import 'subsidies.dart'; // Import the shop.dart file
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
+import 'package:Renewify/gen_l10n/app_localizations.dart';
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
 

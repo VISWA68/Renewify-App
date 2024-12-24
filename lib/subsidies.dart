@@ -9,7 +9,7 @@ import 'post_view_page.dart';
 import 'settings.dart';
 import 'shop.dart';
 import 'solarservices.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:Renewify/gen_l10n/app_localizations.dart';
 
 class subsidies extends StatelessWidget {
   const subsidies({Key? key}) : super(key: key);
@@ -28,7 +28,7 @@ class subsidies extends StatelessWidget {
                 MyApp.of(context)!.setLocale(const Locale('en'));
               } else if (value == 'ta') {
                 MyApp.of(context)!.setLocale(const Locale('ta'));
-              } else if(value =='hi'){
+              } else if (value == 'hi') {
                 MyApp.of(context)!.setLocale(const Locale('hi'));
               }
             },
@@ -218,8 +218,12 @@ class subsidies extends StatelessWidget {
               ),
             ),
           ),
-          _buildSubsidyContainer(context, AppLocalizations.of(context)!.pm_surya, AppLocalizations.of(context)!.sub,
-              'https://www.pmsuryaghar.gov.in/', 'assets/images/pradhan.png'),
+          _buildSubsidyContainer(
+              context,
+              AppLocalizations.of(context)!.pm_surya,
+              AppLocalizations.of(context)!.sub,
+              'https://www.pmsuryaghar.gov.in/',
+              'assets/images/pradhan.png'),
           _buildSubsidyContainer(
               context,
               AppLocalizations.of(context)!.urts,

@@ -10,8 +10,7 @@ import 'settings.dart';
 import 'shop.dart';
 import 'solarservices.dart';
 import 'subsidies.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
+import 'package:Renewify/gen_l10n/app_localizations.dart';
 class RequirementPage extends StatefulWidget {
   const RequirementPage({Key? key}) : super(key: key);
 

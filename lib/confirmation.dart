@@ -11,8 +11,7 @@ import 'settings.dart';
 import 'shop.dart';
 import 'solarservices.dart';
 import 'subsidies.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-
+import 'package:Renewify/gen_l10n/app_localizations.dart';
 class ConfirmationPage extends StatelessWidget {
   final String name;
   final String phone;

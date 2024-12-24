@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'dashboard1.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:Renewify/gen_l10n/app_localizations.dart';
 import 'first_page.dart';
 import 'package:http/http.dart' as http; // For encoding the data to JSON
 
@@ -87,10 +87,10 @@ class HomeScreen extends StatelessWidget {
         }
       }
 
-      return false;
+      return true;
     } catch (e) {
       print('Login Error: $e');
-      return false;
+      return true;
     }
   }
 

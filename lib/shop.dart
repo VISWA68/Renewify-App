@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'cart.dart';
 import 'shoplocation.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:Renewify/gen_l10n/app_localizations.dart';
 
 class ShopPage extends StatefulWidget {
   const ShopPage({Key? key}) : super(key: key);

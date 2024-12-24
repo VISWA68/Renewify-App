@@ -13,7 +13,7 @@ import 'post_view_page.dart';
 import 'settings.dart';
 import 'shop.dart';
 import 'subsidies.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:Renewify/gen_l10n/app_localizations.dart';
 import 'things_to_know.dart';
 
 class SolarServices extends StatefulWidget {
