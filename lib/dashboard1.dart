@@ -1,3 +1,4 @@
+import 'package:Renewify/screens/shop_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'biogas_services.dart';
@@ -24,16 +25,15 @@ class _DashBoardState extends State<DashBoard>
     with SingleTickerProviderStateMixin {
   late Animation<double> animation;
   late AnimationController _controller;
-  late List<String>
-    tutorialTexts = [
-      AppLocalizations.of(context)!.tut1,
-      AppLocalizations.of(context)!.tut2,
-      AppLocalizations.of(context)!.tut3,
-      AppLocalizations.of(context)!.tut4,
-      AppLocalizations.of(context)!.tut5,
-      AppLocalizations.of(context)!.tut6,
-      AppLocalizations.of(context)!.tut7,
-    ];
+  late List<String> tutorialTexts = [
+    AppLocalizations.of(context)!.tut1,
+    AppLocalizations.of(context)!.tut2,
+    AppLocalizations.of(context)!.tut3,
+    AppLocalizations.of(context)!.tut4,
+    AppLocalizations.of(context)!.tut5,
+    AppLocalizations.of(context)!.tut6,
+    AppLocalizations.of(context)!.tut7,
+  ];
   final List<GlobalKey> containerKeys = [
     GlobalKey(),
     GlobalKey(),
@@ -79,7 +79,6 @@ class _DashBoardState extends State<DashBoard>
       _showTutorialOverlay();
     });
   }
-
 
   void _showTutorialOverlay() {
     if (currentTutorialIndex >= tutorialTexts.length) return;
@@ -311,7 +310,7 @@ class _DashBoardState extends State<DashBoard>
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ShopPage()),
+                  MaterialPageRoute(builder: (context) => ShopsPage()),
                 );
               },
             ),
@@ -383,7 +382,7 @@ class _DashBoardState extends State<DashBoard>
                 MyApp.of(context)!.setLocale(const Locale('en'));
               } else if (value == 'ta') {
                 MyApp.of(context)!.setLocale(const Locale('ta'));
-              } else if(value =='hi'){
+              } else if (value == 'hi') {
                 MyApp.of(context)!.setLocale(const Locale('hi'));
               }
             },
@@ -445,14 +444,16 @@ class _DashBoardState extends State<DashBoard>
           ),
           // Main content
           Padding(
-            padding: const EdgeInsets.only(top: 58.0, left: 18.0, right: 18.0, bottom:18.0),
+            padding: const EdgeInsets.only(
+                top: 58.0, left: 18.0, right: 18.0, bottom: 18.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(height: 10),
                 Expanded(
                   child: GridView.count(
-                    crossAxisCount: MediaQuery.of(context).size.width < 600 ? 2 : 3,
+                    crossAxisCount:
+                        MediaQuery.of(context).size.width < 600 ? 2 : 3,
                     crossAxisSpacing: 10,
                     mainAxisSpacing: 10,
                     children: <Widget>[

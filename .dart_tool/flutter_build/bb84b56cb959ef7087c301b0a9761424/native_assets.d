@@ -1,0 +1,1 @@
+ D:\\Renewify_app\\Renewify_app\\.dart_tool\\flutter_build\\bb84b56cb959ef7087c301b0a9761424\\native_assets.yaml: 

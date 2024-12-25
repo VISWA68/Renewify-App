@@ -1,6 +1,8 @@
 import 'dart:convert';
+import 'package:Renewify/providers/cart_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:provider/provider.dart';
 import 'dashboard1.dart';
 import 'package:Renewify/gen_l10n/app_localizations.dart';
 import 'first_page.dart';
@@ -29,7 +31,9 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return ChangeNotifierProvider(
+      create: (_) => CartProvider(),
+      child: MaterialApp(
       locale: _locale,
       localizationsDelegates: const [
         AppLocalizations.delegate,
@@ -43,6 +47,7 @@ class _MyAppState extends State<MyApp> {
         Locale('hi')
       ],
       home: HomeScreen(),
+      )
     );
   }
 }
